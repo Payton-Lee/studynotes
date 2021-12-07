@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div :nth-child(1) {
+            background-color: pink;
+        } */
+        /* div span:nth-child(2) {
+            background-color: purple;
+        } */
+        /* 总结： :nth-child(n)选择父元素里面的 第n个孩子 ，它不管里面的还是是否同一种类型 */
+        
+        div span:first-of-type {
+            background-color: purple;
+        }
+        
+        div span:last-of-type {
+            background-color: skyblue;
+        }
+        
+        div span:nth-of-type(2) {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>我是一个p</p>
+        <span>我是span</span>
+        <span>我是span</span>
+        <span>我是span</span>
+    </div>
+    <!-- ul里面只允许放li 所以nth-child 和 nth-of-type 就是一样的 -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+</html>

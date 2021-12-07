@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动口诀之浮</title>
+    <style>
+        .one {
+            /* 不是标准流了，漂浮起来了 浮在 标准流的上方 */
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+        }
+        .two {
+            float: left;
+            width: 300px;
+            height: 300px;
+            background-color: purple;
+        }
+        .three {
+            width: 400px;
+            height: 400px;
+            background-color: rgb(252, 1, 252);
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</body>
+</html>

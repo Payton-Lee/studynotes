@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery.min.js"></script>
+    <script>
+        $(function() {
+            function $(ele) {
+                return document.querySelector("div");
+            }
+            console.log($("div"));
+            // 1. 如果$符号冲突 就使用jQuery
+            jQuery.each();
+            // 2. 让jQuery 释放对$ 的控制权 让用户自己决定
+            var suibian = jQuery.noConflict();
+            console.log(suibian("span"));
+            suibian.each();
+        })
+    </script>
+</head>
+
+<body>
+    <div></div>
+    <span></span>
+</body>
+
+</html>

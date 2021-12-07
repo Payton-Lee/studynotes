@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 出现了权重叠加的现象 */
+        /* .nav a 权重 0,0,1,0 + 0,0,0,1 = 0,0,1,1 */
+        .nav a {
+            color: red;
+            text-decoration: none;
+        }
+        /* .first 权重 0,0,1,0 */
+        .nav .first {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div>人生四大悲</div>
+    <div class="nav">
+        <a href="#" class="first">家里没宽带</a>
+        <a href="#">网速不够快</a>
+        <a href="#">手机没流量</a>
+        <a href="#">学校无WiFi</a>
+    </div>
+</body>
+</html>

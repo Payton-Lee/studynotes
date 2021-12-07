@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grandfather {
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+            position: relative;
+        }
+        .father {
+            width: 350px;
+            height: 350px;
+            background-color: pink;
+            /* margin: 100px; */
+            /* 标准流的盒子总是以父级为准移动盒子 */
+            /* 如果父级没有定位 绝对定位子盒子 以我们的问道为准的浏览器移动位置 */
+            position: relative;
+        /* 如果父级 有定位 绝对定位子盒子 以父级为准移动盒子 */
+        }
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            /* margin-left: 100px; */
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            /* 将元素依据最近的已经定位的（绝对，固定，相对定位）的父元素（祖先）进行定位 */
+        }
+    </style>
+</head>
+<body>
+    <div class="grandfather">
+        <div class="father">
+            <div class="son"></div>
+        </div>
+    </div>
+</body>
+</html>

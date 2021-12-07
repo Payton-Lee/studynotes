@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 客户需求：p和span里面的颜色都是红色 */
+        /* 并集选择器 用逗号隔开，逗号理解为和的一丝，通常用于集体声明  就是因给这些选择器  里面的样式 想同*/
+        p,
+        span,
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>我和你</p>
+    <p>我和你</p>
+    <p>我和你</p>
+    <span>我和你</span><span>我和你</span><span>我和你</span>
+    <div class="red">我和你</div>
+    <div>我和你</div>
+    <div>我和你</div>
+</body>
+</html>

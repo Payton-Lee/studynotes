@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.a 是设置左侧背景（左门）*/
+        a {
+            /* 因为我们是滑动门，左右推拉
+            跟文字内容多少有关系，此时要用文字撑开合适 ，就要用到行内块 */
+            display: inline-block;
+            height: 33px;
+            background: url(./images/to.png) no-repeat;
+            margin: 100px;
+            padding-left: 15px;
+            line-height: 33px;
+            text-decoration: none;
+            color: #fff;
+        }
+        /* 2.span 是这是右侧背景 （右门） */
+        a span {
+            display: inline-block;
+            height: 33px;
+            background: url(./images/to.png) no-repeat right top;
+            padding-right: 15px;
+        }
+
+        /* 3.因为征稿导航栏都是链接 所以 a 要包含span  */
+    </style>
+</head>
+<body>
+    <a href="#">
+        <span>首页</span>
+    </a>
+    <a href="#">
+        <span>公司首页</span>
+    </a>
+</body>
+</html>

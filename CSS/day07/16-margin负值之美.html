@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            float: left;
+            width: 200px;
+            height: 300px;
+            border: 1px solid #ccc;
+            margin-left: -1px;
+            margin-top: -1px;
+        }
+        /* 鼠标经过div 的意思 p:hover */
+        div:hover {
+            /* 我要让当前鼠标经过这个div时，升到最高处就行了 */
+            border: 1px solid #f40;
+            /* 只要保证当前的盒子是定位 就会压住标准流和浮动了 */
+            position: relative;
+            /* 只能用相对定位 是占位置的 */
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

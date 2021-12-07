@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <style>
+        [class^="col"] {
+            border: 1px solid #ccc;
+        }
+        
+        .row:nth-child(1) {
+            background-color: pink;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">1</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">2</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">3</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">4</div>
+        </div>
+        <!-- 如果的孩子的份数相加等于12 则孩子能沾满整个 的container 的宽度 -->
+        <div class="row">
+            <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">1</div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">2</div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">3</div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">4</div>
+        </div>
+        <!-- 如果孩子占的份数小于12 会？ 则占不满整个container的宽度，会有空白 -->
+        <div class="row">
+            <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">1</div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">2</div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">3</div>
+            <div class="col-lg-1 col-md-4 col-sm-6 col-xs-12">4</div>
+        </div>
+        <!-- 如果孩子占的份数大于12 会？多余的那一列另起一行显示-->
+        <div class="row">
+            <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">1</div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">2</div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">3</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">4</div>
+        </div>
+    </div>
+</body>
+
+</html>

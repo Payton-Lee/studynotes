@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 400px;
+            height: 400px;
+            margin: 100px auto;
+            background-color: pink;
+            overflow: hidden;
+        }
+        
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            margin: 100px;
+            text-align: center;
+            line-height: 200px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son">son盒子</div>
+    </div>
+    <script>
+        //常见事件对象的属性和方法
+        //阻止冒泡 dom推荐的标准 stopPropagation()
+        var son = document.querySelector('.son');
+        son.addEventListener('click', function(e) {
+            alert('son');
+            e.stopPropagation(); // stop 停止  Propagation 传播
+            e.cancelBubble = true; // 非标准 cancel 取消 bubble 泡泡
+        }, false);
+        var father = document.querySelector('.father');
+        father.addEventListener('click', function(e) {
+            alert('father');
+            if (e && e.stopPropagation) {
+                e.stopPropagation();
+            } else {
+                window.event.cancelBubble = true;
+            }
+        }, false);
+        document.addEventListener('click', function() {
+            alert('document');
+        }, false);
+    </script>
+</body>
+
+</html>

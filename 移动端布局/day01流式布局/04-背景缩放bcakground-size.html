@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+            border: 2px solid red;
+            background: url(./images/dog.jpg) no-repeat;
+            /* background-size: 图片的宽度 图片的高度; */
+            /* background-size: 500px 200px; */
+            /* 1.只写一个参数 肯定是宽度 高度省略 会等比例缩放 */
+            /* background-size: 500px; */
+            /* 2.里面的单位可以跟百分比 ，相对于父盒子来说的 */
+            /* background-size: 50%; */
+            /* 3. cover要完全覆盖div盒子 可能有部分背景图片显示不全*/
+            /* background-size: cover; */
+            /* 4.contain将图片扩展至最大尺寸，使宽度或高度完全适应内容区域 当有其中一个铺满盒子 就不在继续拉伸*/
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

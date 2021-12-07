@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>链接导航栏</title>
+    <style>
+        .nav {
+            /* 让里面的六个链接水平居中对齐
+            这句话对 行内元素 行内块元素都有效果的
+             */
+            text-align: center;
+        }
+        .nav a {
+            /* 有大小的 因为a是行内元素 不能直接设置宽度和高 必须要转换 */
+            display: inline-block;
+            width: 120px;
+            height: 50px;
+            background-color: pink;
+            /* 行高等于高度 就能让文本水平居中 */
+            line-height: 50px;
+            text-decoration: none;
+            color: white;
+            background: url(image/bg.png) no-repeat;
+        }
+        /* 鼠表经过nav里面的链接，背景图片更换一下 */
+        .nav a:hover {
+            background-image: url(image/bgc.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#">网站首页</a>
+        <a href="#">网站首页</a>
+        <a href="#">网站首页</a>
+        <a href="#">网站首页</a>
+        <a href="#">网站首页</a>
+        <a href="#">网站首页</a>
+    </div>
+    
+</body>
+</html>

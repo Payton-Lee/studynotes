@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>固定定位</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+        .box {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            margin: 100px;
+        }
+        .box img {
+            /* 和父级没有关系 */
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+        /* 固定定位是绝对定位的一种特殊形式：（认死理型）
+        完全脱标，完全不占位置
+        跟父元素没有任何关系；单独使用的
+        不随滚动条滚动 */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./images/sun.jpg" alt="" width="150">
+    </div>
+</body>
+</html>

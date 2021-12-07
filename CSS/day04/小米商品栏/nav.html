@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米案例练习</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        }
+        body {
+            background-color: #f5f5f5;
+        }
+        img {
+            border: 0;
+        }
+        .box {
+            width: 1226px;
+            height: 615px;
+            background-color: #f5f5f5;
+            margin: auto;
+        }
+        .left {
+            float: left;
+            width: 234px;
+            height: 615px;
+            background-color: #f5f5f5;
+        }
+        .left a {
+            display: inline-block;
+            width: 234px;
+            height: 615px;
+        }
+        .left a:hover {
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, .1);
+            transform: translate3d(0, -2px, 0);
+        }
+        .left a img {
+            width: 100%;
+        }
+        .right {
+            float: right;
+            width: 992px;
+            height: 615px;
+            background-color: #f5f5f5;
+        }
+        .right li {
+            float: left;
+            width: 234px;
+            height: 300px;
+            background-color: #f5f5f5;
+            margin-left: 14px;
+            margin-bottom: 14px;
+        }
+        .right li a img {
+            width: 160px;
+            height: 160px;
+            padding: 0 37px 0;
+        }
+        .right li a {
+            height: 300px;
+            width: 234px;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        .right li a:hover {
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, .1);
+            transform: translate3d(0, -2px, 0);
+        }
+        .right li a h3 {
+            color: #333333;
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0 10px 2px;
+        }
+        .right li a .desc {
+            color: #b0b0b0;
+            margin: 0 10px 10px;
+            height: 18px;
+            font-size: 12px;
+        }
+        .right li a .price {
+            color: #ff6700;
+            margin: 0 10px 14px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="left">
+            <a href="https://www.mi.com/mixfold">
+                <div>
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c583f2edc613f1be20fa415910b13ce3.jpg?thumb=1&w=293&h=768&f=webp&q=90" alt="">
+                </div>
+            </a>
+        </div>
+        <ul class="right">
+            <li>
+                <a href="https://www.mi.com/mixfold">
+                    <div>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5dc32ec73299ff79556dcd1cf0f0ac11.png?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                    </div>
+                    <h3>小米MIX FOLD</h3>
+                    <p class="desc">折叠大屏｜自研芯片</p>
+                    <p class="price">
+                        <span>9999</span>
+                        元
+                        <span>起</span>
+                    </p>
+                </a>
+            </li>
+            <li><a href="https://www.mi.com/mi11ultra">
+                <div>
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/eb69512d9d6430d865d457ec52eebb51.png?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                </div>
+                <h3>
+                    小米11 Ultra
+                </h3>
+                <p class="desc">1.12''GN2｜2K四微曲屏</p>
+                <p class="price">
+                    <span>5999</span>
+                    元
+                    <span>起</span>
+                </p>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mi.com/mi11Pro">
+                    <div>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/34caee2c867bfd8c5e0dc2d8c663e121.jpg?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                    </div>
+                    <h3>
+                        小米11 Pro
+                    </h3>
+                    <p class="desc">1.12''GN2｜骁龙888</p>
+                    <p class="price">
+                        <span>4999</span>
+                        元
+                        <span>起</span>
+                    </p>        
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mi.com/mi11youth">
+                    <div>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cb554f30eaa0316b0a736c3d59f21584.png?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                    </div>
+                    <h3>
+                        小米11 青春版
+                    </h3>
+                    <p class="desc">小米11 青春版 轻薄</p>
+                    <p class="price">
+                        <span>2299</span>
+                        元
+                        <span>起</span>
+                    </p> 
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mi.com/buy/detail?product_id=14031">
+                    <div>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3b7fbb6fe07907c60f08358adab5adfe.png?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                    </div>
+                    <h3>
+                        K40 游戏增强版
+                    </h3>
+                    <p class="desc">轻薄电竞设计</p>
+                    <p class="price">
+                        <span>1999</span>
+                        元
+                        <span>起</span>
+                    </p> 
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mi.com/buy/detail?product_id=13812">
+                    <div>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d47f7ecaa04d92bf2790d4a5d53d9099.png?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                    </div>
+                    <h3>
+                        黑鲨4 Pro
+                    </h3>
+                    <p class="desc">黑鲨4 Pro </p>
+                    <p class="price">
+                        <span>3999</span>
+                        元
+                        <span>起</span>
+                    </p> 
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mi.com/buy/detail?product_id=13810">
+                    <div>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c21247abf4bc610cd86fe00601b0f766.png?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                    </div>
+                    <h3>
+                        黑鲨4
+                    </h3>
+                    <p class="desc">黑鲨4 磁动力升降肩键</p>
+                    <p class="price">
+                        <span>2499</span>
+                        元
+                        <span>起</span>
+                    </p> 
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mi.com/mi10s">
+                    <div>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b3553083a4975325eab6470d94465548.jpg?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                    </div>
+                    <h3>
+                        小米10S
+                    </h3>
+                    <p class="desc">骁龙870 | 对称式双扬立体声</p>
+                    <p class="price">
+                        <span>3299</span>
+                        元
+                        <span>起</span>
+                    </p> 
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

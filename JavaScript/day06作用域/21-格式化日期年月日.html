@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //格式日期 年月日
+        var date = new Date();
+        console.log(date.getFullYear()); //返回当前日期的年2021
+        console.log(date.getMonth() + 1); //返回当前日期的月 返回的月份少一个1 记得加1 返回6 
+        console.log(date.getDate()); //返回的是几号
+        console.log(date.getDay()); //返回的是周几 ，周一到周六返回1~6，周日返回0 
+        //写一个返回 2021年7月26号 星期一
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var dates = date.getDate();
+        var dayArr = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+        var day = date.getDay();
+        console.log('今天是' + year + '年' + month + '年' + dates + '日 ' + dayArr[day]);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

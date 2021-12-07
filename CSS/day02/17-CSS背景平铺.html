@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg1 {
+            background-image: url(image/65950508_p0.png);
+            height: 300px;
+            background-color: pink;
+            background-repeat: repeat;
+            /* 默认平铺，事实上可以写，可以不写background-repeat: ; */
+        }
+        .bg2 {
+            background-image: url(image/65950508_p0.png);
+            height: 300px;
+            background-color: pink;
+            background-repeat: no-repeat;
+            /* 不平铺 */
+        }
+        .bg3 {
+            background-image: url(image/65950508_p0.png);
+            height: 300px;
+            background-color: pink;
+            background-repeat: repeat-x;
+            /* 横向平铺 */
+        }
+        .bg4 {
+            background-image: url(image/65950508_p0.png);
+            height: 300px;
+            background-color: pink;
+            background-repeat: repeat-y;
+            /* 纵向平铺 */
+        }
+    </style>
+</head>
+<body>
+    <div class="bg1">这里有一张图片</div>
+    <dvi class="bg2">这里有一张图片</dvi>
+    <div class="bg3">这里有一张图片</div>
+    <div class="bg4">这里有一张图片</div>
+</body>
+</html>

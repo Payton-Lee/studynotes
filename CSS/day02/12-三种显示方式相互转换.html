@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            /* 把行内元素转换为块级元素 */
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        /* 把块级元素转换为行内元素 */
+        div {
+            display: inline;
+            background-color: purple;
+        }
+        a {
+            display: inline-block;
+            width: 80px;
+            height: 25px;
+            background-color: orange;
+            text-decoration: none;
+        }
+        a:hover {
+            color: orchid;
+        }
+    </style>
+</head>
+<body>
+    <span>行内</span>
+    <span>行内</span>
+    <div>块级元素</div>
+    <div>块级元素</div>
+    <a href="#">百度</a>
+    <a href="#">新浪</a>
+</body>
+</html>

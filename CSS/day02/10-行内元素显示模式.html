@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 宽高设置是无效的行内元素的宽高是默认的 */
+        
+        span {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <span>我是行内元素</span>
+    <span>我是行内元素</span>   
+    <span>我是行内元素</span>
+    <!-- 行内元素里面可以包含行内元素，但是不能包含块级元素 -->
+    <span>
+        <strong>行内元素放置行内元素</strong>
+    </span>   
+    <!-- a标签里面不能放置a标签 -->
+
+</body>
+</html>

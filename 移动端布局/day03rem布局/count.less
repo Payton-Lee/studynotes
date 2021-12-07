@@ -1,0 +1,18 @@
+@border: 5px + 5;
+@color: (#bbbbbb / 2);
+html {
+    font-size: 50px;
+}
+div {
+    width: 200px - 50;
+    height: 200px;
+    border: @border solid red;
+    color: @color;
+}
+img {
+    width: (82rem / 50);
+    height: (82rem / 50);
+}
+// 1.运算符的左右两侧必须敲一个空格隔开 
+// 2.如果两个数参与运算，如果只有一个数有单位，则最后的记过就是以这个单位为准
+// 3.两个数参与运算，如果2个数都有单位，而且不一样的单位  最后一个结果以第一个单位为准

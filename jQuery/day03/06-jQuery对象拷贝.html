@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery.min.js"></script>
+    <script>
+        $(function() {
+            // var targetObj = {
+
+            // };
+            // var obj = {
+            //     id: 1,
+            //     name: "andy"
+            // };
+            // $.extend(targetObj, obj);
+            // console.log(targetObj);
+            var targetObj = {
+                id: 0,
+                msg: {
+                    sex: '男'
+                }
+            };
+            var obj = {
+                id: 1,
+                name: "andy",
+                msg: {
+                    age: 18
+                }
+            };
+            // $.extend(targetObj, obj);
+            // console.log(targetObj); // 会覆盖targetObj 里面的原来的数据
+            // // 1. 浅拷贝把原来对象里面的复杂数据类型地址拷贝给目标对象
+            // targetObj.msg.age = 20;
+            // console.log(obj)
+            // console.log(targetObj);;
+            // 2. 深拷贝会把里面的数据完全赋值一份给目标对象如果里面有不冲突的属性 会合并在一起
+            $.extend(true, targetObj, obj);
+            targetObj.msg.age = 20;
+            console.log(targetObj); // msg: {sex: "男", age: 18}
+            console.log(obj);
+        })
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getArrMax(arr) { //arr接收一个数组
+            var max = arr[0];
+            for (var i = 1; i <= arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+            }
+            return max;
+            //return后面的代码不会被执行
+            alert('我是不会被执行的哦！');
+            // return只可以返回一个值 多个返回值默认返回最后面那个
+        }
+        // getArrMax([5, 2, 99, 101, 67, 77]); // 实参是一个数传过去
+        //在实际开发里面  经常使用一个变量来接收函数的返回结果 使用后简单
+        var arr = [5, 2, 99, 101, 67, 77];
+        var re = getArrMax(arr);
+        console.log(re);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

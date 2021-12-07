@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位盒子不占有位置</title>
+    <style>
+        .father {
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            position: relative;
+        }
+        .damao {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+        .ermao {
+            width: 250px;
+            height: 250px;
+            background-color: skyblue;
+        }
+        /* 绝对是以带有定位的父级元素来移动位置（拼爹型）如果父级都没有定位，则以浏览器文档为准移动位置
+        不保留原来的位置，完全是脱标的 */
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="damao"></div>
+        <div class="ermao"></div>
+    </div>
+</body>
+</html>

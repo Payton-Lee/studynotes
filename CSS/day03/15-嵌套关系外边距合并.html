@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            /* background-image: url(image/ax.png); */
+            /* 嵌套关系 垂直外边距合并 解决方案 */
+            /* 1.可以为父元素定义上边框 transparent 透明的 */
+            /* border-top: 1px solid transparent; */
+            /* 2.可以给父级定义一个上边距 上padding值 */
+            /* padding-top: 1px; */
+            /* 3.可以为父级元素天剑overflow:hidden。 */
+            overflow: hidden;
+        }
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            margin-top: 150px;
+            margin-left: 150px;
+            /* background-image: url(image/ax.png); */
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

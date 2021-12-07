@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg1 {
+            background-image: url(image/65950508_p0.png);
+            height: 300px;
+            background-color: pink;
+            background-repeat:no-repeat;
+            /* 默认平铺，事实上可以写，可以不写background-repeat: ; */
+            /* 背景位置 */
+            /* background-position: x坐标 y坐标; */
+            /* background-position: right top;右上角 */
+            /* background-position:  left bottom;左下角 */
+            /* background-position: center center;水平居中 垂直居中 */
+            /* 如果指定两个值，两个值都是方位名字，则两个值得前后顺序无关，比如left和top，top left的效果一致 */
+            /* background-position: left top; = background-position: top left; */
+            /* 如果只指定一个数值，那该数值用于x坐标，另外一个默认是y坐标，默认居中 */
+            background-position: left;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="bg1">这里有一张图片</div>
+</body>
+</html>

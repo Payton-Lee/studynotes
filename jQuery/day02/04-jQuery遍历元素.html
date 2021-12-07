@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery.min.js"></script>
+</head>
+
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <script>
+        $(function() {
+            // 如果对于同一类元素做不同的操作，需要用到遍历元素(类似 for 但是比for强大)
+            // 1. each() 方法遍历元素
+            var sum = 0;
+            var colorArr = ["red", "green", "blue"];
+            $("div").each(function(index, domEle) {
+                // 回调函数第一个参数一定是索引号 可以自己自定义索引号名称
+                $(domEle).css("color", colorArr[index]);
+                sum += parseInt($(domEle).text());
+            });
+            console.log(sum);
+            $.each($("div"), function(i, ele) {
+                console.log(i);
+                console.log(ele);
+            });
+            $.each(colorArr, function(i, ele) {
+                console.log(i);
+                console.log(ele);
+            });
+            $.each({
+                nane: 'andy',
+                age: 18
+            }, function(i, ele) {
+                console.log(i); // 输出的是 name age 属性名
+                console.log(ele); // 输出的是 andy 18 属性值
+            })
+        })
+    </script>
+</body>
+
+</html>

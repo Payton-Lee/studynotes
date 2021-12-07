@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //3.逻辑与短路运算 如果表达式1返回为真，则返回表达式2 如果表达式1 为假 则返回表达式1
+        console.log(123 && 456);
+        console.log(0 && 456);
+        // 如果有空的或者否定的为佳 其余的是真的 0 '' null undefined 
+        // 4.逻辑哦豁短路运算 如果表达式1 结果为真 则返回的是表达式1 如果表达式1结果为假 则返回表达式2
+        console.log(123 || 456);
+        console.log(0 || 456);
+        //逻辑中断 很重要 会影响程序的运行结果
+        var num = 0
+        console.log(123 || num++);
+        console.log(num);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
