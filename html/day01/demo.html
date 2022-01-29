@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button type="button" onclick="createNewP()">动态添加一个元素-- appendChild</button>
+  <button type="button" onclick="createNewP2()">动态添加一个元素-- insertBefore</button>
+  <div id="div1">
+    <p id="p1">这是段落1</p >
+    <p id="p2">这是段落2</p >
+  </div>
+  <script>
+    function createNewP() {
+      var newElementP = document.createElement("p");//创建一个新的段落元素
+      var text = document.createTextNode("这是我新创建的段落");//新创建的文本节点 //将文本的节点添加到新创建的元素中
+      newElementP.appendChild(text);
+      //获取一个页面已经存在的元素
+      var div = document.getElementById("div1"); //添加新创建的元素p到已经存在的元素div中
+      div.appendChild(newElementP);
+    }
+    function createNewP2() {
+      var newElementP = document.createElement("p");//创建一个新的段落元素
+      var text = document.createTextNode("这是我新创建的段落p2");//新创建的文本节点 //将文本的节点添加到新创建的元素中
+      newElementP.appendChild(text);
+      //获取一个页面已经存在的元素
+      var div = document.getElementById("div1");
+      var p1 = document.getElementById("p1");
+      //添加新创建的元素p到已经存在的元素div中,指定插入到段落P1前面
+      div.insertBefore(newElementP, p1);
+}
+</script>
+</body>
+</html>
