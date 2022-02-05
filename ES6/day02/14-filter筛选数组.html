@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // filter 筛选数组
+    var arr = [12, 66, 48, 88, 7, 5, 3]
+    var arr1 = arr.filter(function(value, index) {
+      return value >= 20
+    })
+    var arr2 = arr.filter(function(value, index) {
+      return value % 2 === 0
+    })
+    console.log(arr1)
+    console.log(arr2)
+    /*
+      array.filter(function(currentValue, index, arr))
+      filter() 方法创建一个新的数组，新数组中的元素是通过检查指定数组中符合条件的所有元素，主要用于筛选数组
+      注意它直接返回一个新数组
+      currentValue: 数组当前项的值
+      index: 数组当前项的索引
+      arr: 数组对象本身
+    */
+  </script>
+</body>
+</html>

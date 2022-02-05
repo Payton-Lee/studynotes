@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 可以通过原型对象，对原来的内置对象进行拓展自定义的方法，比如给数组增加自定义求偶数和的功能
+    // 原型对象的应用，拓展内置对象的方法
+    console.log(Array.prototype)
+    Array.prototype.sum = function () {
+      let sum = 0
+      for (let i = 0; i < this.length; i++) {
+        sum += this[i]
+      }
+      return sum
+    }
+    // 注意：数组和字符内置对象不能给原型对象覆盖操作 Array.prototype = {}， 只能是 Array.prototype.xxx = function() {}
+    // Array.prototype = {
+    //   sum: function() {
+    //     let sum = 0
+    //     for (let i = 0; i < this.length; i++) {
+    //       sum += this[i]
+    //     }
+    //     return sum
+    //   }
+    // }
+    var arr = [1, 2, 3]
+    console.log(arr.sum())
+    console.log(Array.prototype);
+  </script>
+</body>
+
+</html>
